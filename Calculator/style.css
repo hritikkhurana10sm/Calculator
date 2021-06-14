@@ -1,0 +1,98 @@
+*{
+    box-sizing : border-box;
+    padding : 0;
+    margin : 0;
+  }
+  
+  body{
+    display : flex;
+    flex-direction: column;
+    min-height : 100vh;
+    align-items : center;
+    background-image: url('https://images.unsplash.com/photo-1598349326970-47ea099224c5?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzYyNTExNQ&ixlib=rb-1.2.1&q=85');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .calci{
+    display : grid;
+    padding : 0.1rem;
+    grid-template-columns : 1fr;
+    grid-row-gap : 1rem;
+    background-color : rgb(241, 220, 220);
+    border-radius : 3px;
+  }
+  
+  .heading{
+    padding : 0.5rem;
+    color : white;
+    font-weight : 700;
+    text-align: center;
+    background-color : rgb(160, 33, 33);
+  }
+  
+  .screen{
+    position: relative;
+    height : 4rem;
+    border-radius : 3px;
+  overflow-x: hidden;
+  }
+  
+  .numbers{
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+    grid-gap : 1px;
+    
+  }
+  .flex{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+  }
+  .numbers div{
+      text-align: center;
+      vertical-align:text-bottom;
+      font-weight: 700;
+      font-size: 1.7rem;
+    background-color : white; 
+    padding: 0.9rem 0.9rem;
+    display : inline-block;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  .last{
+     display : grid;
+     grid-area : "zero zero point equal";
+  }
+
+  .numbers div:hover{
+          background-color: rgb(221, 221, 21);
+  }
+
+  .red{
+    background-color: rgb(143, 6, 6)!important;
+    color : white;
+    transition: 0.4s;
+  }
+
+  .red:hover{
+    background-color: rgb(66, 4, 4)!important;
+  }
+
+  #sol{
+    position : absolute;
+    display: inline-block;
+    right : 1%;
+    bottom : 0;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  header{
+    margin : 0.5rem auto 5rem;
+    color :rgb(66, 4, 4);
+    font-size: 2.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-weight: 700;
+  }
